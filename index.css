@@ -1,0 +1,404 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: 'Raks', sans-serif;
+  color: white;
+  background-color: #000000;
+}
+/* Menú navegación */
+nav {
+  background-color: #000000;
+  padding: 10px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+nav {
+  position: relative;
+  z-index: 10;
+  background-color: #000000;
+  border: 2px solid #45eee0; 
+  display: flex !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+nav ul li a:hover {
+  color: #45eee0;
+}
+.logo-superior {
+  background-color: #000;
+  padding: 10px;
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+main, section, aside {
+  padding-top: 80px;
+}
+/* Inicio*/
+header#inicio {
+  height: 90vh;
+  display: flex;
+  align-items: center; /* centra verticalmente */
+  justify-content: center; /* centra horizontalmente */
+  gap: 60px;
+  padding: 0 20px;
+  position: relative;
+  background: none;
+  text-align: left;
+  color: white;
+}
+header#inicio img {
+  width: 700px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #45eee0;
+}
+header#inicio h1.titulo-principal {
+  font-size: 2.5rem; /* tamaño del título principal */
+  margin: 0 0 20px 0;
+}
+
+header#inicio strong {
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: 'Century Gothic', Arial, sans-serif;
+}
+
+header#inicio h2 {
+  font-size: 1.1rem;
+  font-weight: normal;
+  line-height: 1.4;
+  margin: 0;
+  font-family: 'Century Gothic', Arial, sans-serif;
+}
+
+header#inicio .divider {
+  border: none;
+  border-top: 2px solid #45eee0; /* línea turquesa */
+  margin: 15px 0;
+  width: 150px; /* longitud de la línea */
+  opacity: 0.7;
+}
+
+/*Sobre nosotros*/
+.sobre-nosotros {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+.sobre-nosotros-contenedor {
+  background-color: #fff;
+  color: #111;
+  border-radius: 10px;
+  padding: 40px;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;   /* ✅ alinea arriba */
+  gap: 40px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  justify-content: center;  /* solo centra horizontalmente */
+  text-align: center;
+}
+.sobre-nosotros-texto {
+  font-family: 'Century Gothic', Arial, sans-serif;
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;   /* ✅ alinea el contenido arriba */
+  align-items: center;
+}
+.sobre-nosotros-texto h2 {
+  font-size: 2.5rem;
+  color: #45eee0;
+  margin-bottom: 20px;
+}
+.sobre-nosotros-texto p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.sobre-nosotros-imagen {
+  flex: 1 1 300px;
+  text-align: center;
+}
+.sobre-nosotros-imagen img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 8px;
+  border: 3px solid #45eee0;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+/*Productos*/
+.productos {
+  padding: 100px 20px;
+  text-align: center;
+}
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+}
+.producto-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  color: #111;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #45eee0;
+  padding: 30px 20px;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+.producto-card img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+.producto-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #000000;
+}
+.producto-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.producto-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+.productos h2 {
+  font-size: 2.5rem;    
+  color: #fff;       
+  margin-bottom: 20px;
+}
+.productos {
+  padding: 100px 20px;
+  text-align: center;
+  font-family: 'Century Gothic', Arial, sans-serif;
+}
+/*Tao*/
+.tao-partners-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.tao-card, .partners-card {
+  background-color: #fff;
+  color: #111;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 0 15px #45eee0;
+  flex: 1 1 400px;
+  font-family: 'Century Gothic', Arial, sans-serif;
+}
+.tao-card h2,
+.partners-card h2 {
+  color: #000000;
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+  text-align: center;
+}
+.tao-card p,
+.tao-card li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.tao-card ul {
+  padding-left: 20px;
+}
+.tao-image {
+  width: 300px;           
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border: 3px solid #45eee0;   
+  border-radius: 10px;         
+}
+/*Partners*/
+.partners-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.partner-card {
+  background-color: #45eee0;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+.partner-card:hover {
+  transform: translateY(-5px);
+  background-color: #000000;
+  color: #fff;
+  cursor: pointer;
+}
+.partners-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.partner-card img {
+  max-width: 100px;      /* ajusta el tamaño a gusto */
+  height: auto;
+  display: block;
+  margin: 0 auto 10px auto;
+  border: 2px solid #fff;
+  border-radius: 8px;
+}
+.partner-card span {
+  display: block;
+  margin-top: 5px;
+  font-size: 1rem;
+}
+/*Certificaciones*/
+.certificaciones {
+  padding: 100px 20px;
+  text-align: center;
+}
+.certificaciones h2 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 50px;
+}
+.certificaciones-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+.cert-card {
+  background-color: #fff;
+  color: #111;
+  border-radius: 10px;
+  padding: 30px 20px;
+  border: none;
+  box-shadow: 0 0 15px #45eee0;
+  transition: transform 0.3s ease;
+  font-family: 'Century Gothic', Arial, sans-serif;
+}
+.cert-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #000000;
+}
+.cert-card p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.cert-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+/*Videos*/
+.videos {
+  padding: 100px 20px;
+  text-align: center;
+  background-color: #000000;
+}
+.videos h2 {
+  color: #ffffff;
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+.media-card {
+  background-color: #ffffff;
+  color: #111;
+  display: inline-block;
+  width: 600px;             /* Aumentamos el tamaño */
+  margin: 30px;
+  padding: 30px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 15px #45eee0;
+  transition: transform 0.3s ease;
+}
+.media-card:hover {
+  transform: translateY(-10px);
+}
+.media-card video,
+.media-card audio {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.media-card figcaption {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #333;
+}
+/*Contacto*/
+.contacto-contenedor {
+  position: relative;
+  background-image: url('HashiCorp/Hasicorp236.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 3px solid #45eee0;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  color: #fff; 
+}
+.contacto-contenedor::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* Capa negra semitransparente */
+  border-radius: 10px;
+  z-index: 0;
+}
+.contacto-contenedor > * {
+  position: relative;
+  z-index: 1;
+}
+.contacto-titulo {
+  color: #fff; 
+  text-align: center;
+  font-size: 2.5rem; /* tamaño similar a "Sobre Nosotros" */
+  margin-bottom: 30px;
+}
+/*Footer*/
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-size: 1rem;
+}
+.footer p {
+  margin: 0;
+}
